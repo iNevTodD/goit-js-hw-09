@@ -1,0 +1,32 @@
+.gallery {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 24px;
+
+    max-width: 1128px;
+}
+
+.gallery-item {
+    list-style: none;
+    flex-basis: calc((100% - 48px) / 3);
+    max-width: 360px;
+}
+
+.gallery-image {
+    width: 100%;
+    display: block;
+    transition: transform 250ms ease;
+
+}
+
+.gallery-image:hover,
+.gallery-image:focus {
+    transform: scale(1.03);
+}
